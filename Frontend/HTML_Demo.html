@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop3 HTML Demo</title>
+    <link rel="stylesheet" href="CSS_Demo.css">
+</head>
+<body>
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="DS3_Photo.jpg" alt="Profile Photo" class="profile">
+        <p>I'm a fourth year data science student fueled by my love for science fiction to create the technology of tomorrow!</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm" action="/submit" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+            <input type="text" id="userName" placeholder="Your Name" required>
+            <input type="email" id="userEmail" placeholder="Your Email" required>
+            <textarea id="userMessage" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <!-- Display area for form data -->
+        <div id="formOutput"></div>
+    </section>
+
+    <script src="JS_Demo.js"></script>
+</body>
+</html>

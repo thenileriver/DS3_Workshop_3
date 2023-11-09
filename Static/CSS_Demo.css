@@ -1,0 +1,67 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: rgb(206, 146, 228);
+}
+
+header, section, footer {
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* 
+Notice how there is a "." infront of this rule. The "." targets elements in the 
+HTML file with the same class="profile"
+
+This is used in the line:
+
+<img src="{{ url_for('static', filename='DS3_Photo.jpg') }}" alt="Profile Photo" class="profile">
+
+To set the size of the image used
+*/
+.profile {
+    width: 250px;
+    height: auto;
+}
+
+form input, form textarea {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
